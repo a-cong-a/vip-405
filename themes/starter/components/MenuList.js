@@ -83,9 +83,9 @@ export const MenuList = props => {
           showMenu ? '' : 'hidden'
         }`}>
         <ul className='blcok lg:flex 2xl:ml-20'>
-          {links?.map((link, index) => (
+          {/* {links?.map((link, index) => (
             <MenuItem key={index} link={link} />
-          ))}
+          ))} */}
         </ul>
       </nav>
     </div>
