@@ -70,10 +70,10 @@ const LayoutBase = props => {
       </div>
 
       {/* 页脚 */}
-      <Footer {...props} />
+      {/* <Footer {...props} /> */}
 
       {/* 悬浮按钮 */}
-      <BackToTopButton />
+      {/* <BackToTopButton /> */}
 
       {/* <MadeWithButton/> */}
     </div>
@@ -125,7 +125,7 @@ const LayoutIndex = props => {
       {siteConfig('STARTER_CONTACT_ENABLE', true, CONFIG) && <Contact />}
 
       {/* 行动呼吁 */}
-      {siteConfig('STARTER_CTA_ENABLE', true, CONFIG) && <CTA />}
+      {/* {siteConfig('STARTER_CTA_ENABLE', true, CONFIG) && <CTA />} */}
     </>
   )
 }
