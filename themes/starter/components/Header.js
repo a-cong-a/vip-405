@@ -21,7 +21,9 @@ export const Header = props => {
     router.route === '/' ? 'text-white' : ''
   )
 
-  const enableClerk = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+  // const enableClerk = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+  const enableClerk = false
+
 
   useEffect(() => {
     if (isDarkMode || router.route === '/') {
@@ -68,7 +70,7 @@ export const Header = props => {
               {/* 右侧功能 */}
               <div className='flex items-center gap-4 justify-end pr-16 lg:pr-0'>
                 {/* 深色模式切换 */}
-                <DarkModeButton />
+                {/* <DarkModeButton /> */}
                 {/* 注册登录功能 */}
                 {enableClerk && (
                   <>
@@ -92,7 +94,7 @@ export const Header = props => {
                     </SignedIn>
                   </>
                 )}
-                {!enableClerk && (
+                {/* {!enableClerk && (
                   <div className='hidden sm:flex gap-4'>
                     <Link
                       href={siteConfig('STARTER_NAV_BUTTON_1_URL', '')}
@@ -105,7 +107,7 @@ export const Header = props => {
                       {siteConfig('STARTER_NAV_BUTTON_2_TEXT')}
                     </Link>
                   </div>
-                )}
+                )} */}
               </div>
             </div>
           </div>
