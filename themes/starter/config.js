@@ -11,13 +11,13 @@ const CONFIG = {
   // 英雄区块导航
   STARTER_HERO_ENABLE: true, // 开启英雄区
   STARTER_HERO_TITLE_1: 'Tech-Ar', // 英雄区文字
-  STARTER_HERO_TITLE_2: '你的一站式资源藏库', // 英雄区文字
+  STARTER_HERO_TITLE_2: '一站式资源收藏夹 永不丢失!', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
   STARTER_HERO_BUTTON_1_TEXT: '会员登录', // 英雄区按钮
   STARTER_HERO_BUTTON_1_URL:
     '/about', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_TEXT: '', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_URL: '', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_TEXT: '查看最新合集!', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_URL: 'https://1ho.online', // 英雄区按钮
   STARTER_HERO_BUTTON_2_ICON: '', // 英雄区按钮2的图标，不需要则留空
 
   // 英雄区配图，如需隐藏，改为空值即可 ''
