@@ -50,7 +50,7 @@ export const Hero = (props) => {
             <p
               className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]"
             >
-               Open a new world with code.<br></br>
+               Your one-stop favorites will never be lost!<br></br>
               {siteConfig('STARTER_HERO_TITLE_2', null, CONFIG)}
             </p>
 
