@@ -44,7 +44,7 @@ export const Hero = (props) => {
               className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]"
             >
               {/* {siteConfig('STARTER_HERO_TITLE_1', null, CONFIG)} */}
-              <span>1HO</span><span className='text-red-700 ml-2'>PRO</span>
+              <span>PRO</span><span className='text-red-700 ml-2'>+</span>
             </h1>
             {/* 次标题 */}
             <p
