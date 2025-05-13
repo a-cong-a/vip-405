@@ -21,9 +21,7 @@ export const Header = props => {
     router.route === '/' ? 'text-white' : ''
   )
 
-  // const enableClerk = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
-  const enableClerk = false
-
+  const enableClerk = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
 
   useEffect(() => {
     if (isDarkMode || router.route === '/') {
@@ -75,7 +73,7 @@ export const Header = props => {
                 {enableClerk && (
                   <>
                     <SignedOut>
-                      <div className='hidden sm:flex gap-4'>
+                      <div className='sm:flex gap-4'>
                         <Link
                           href={siteConfig('STARTER_NAV_BUTTON_1_URL', '')}
                           className={`loginBtn ${buttonTextColor} p-2 text-base font-medium hover:opacity-70`}>
@@ -90,11 +88,11 @@ export const Header = props => {
                     </SignedOut>
                     <SignedIn>
                       <UserButton />
-                      <DashboardButton className={'hidden md:block'} />
+                      <DashboardButton className={'md:block'} />
                     </SignedIn>
                   </>
                 )}
-                {/* {!enableClerk && (
+                {!enableClerk && (
                   <div className='hidden sm:flex gap-4'>
                     <Link
                       href={siteConfig('STARTER_NAV_BUTTON_1_URL', '')}
@@ -107,7 +105,7 @@ export const Header = props => {
                       {siteConfig('STARTER_NAV_BUTTON_2_TEXT')}
                     </Link>
                   </div>
-                )} */}
+                )}
               </div>
             </div>
           </div>
