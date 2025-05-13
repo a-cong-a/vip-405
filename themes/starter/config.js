@@ -25,11 +25,11 @@ const CONFIG = {
   STARTER_HERO_BANNER_IMAGE: '', // hero区下方的全宽图
 
   // 顶部右侧导航暗流
-  STARTER_NAV_BUTTON_1_TEXT: '关于',
-  STARTER_NAV_BUTTON_1_URL: '/sign-in',
+  STARTER_NAV_BUTTON_1_TEXT: ' ',
+  STARTER_NAV_BUTTON_1_URL: 'https://1zs.top/',
 
-  STARTER_NAV_BUTTON_2_TEXT: '立即加入资源联盟!',
-  STARTER_NAV_BUTTON_2_URL: '/sign-up',
+  STARTER_NAV_BUTTON_2_TEXT: '关于PRO+',
+  STARTER_NAV_BUTTON_2_URL: 'https://1zs.top/',
 
   // 特性区块
   STARTER_FEATURE_ENABLE: true&false, // 特性区块开关
