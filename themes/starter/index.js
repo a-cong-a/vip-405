@@ -59,13 +59,15 @@ const LayoutBase = props => {
 
   return (
     <div
-      id='theme-starter'
-      className={`${siteConfig('FONT_STYLE')} min-h-screen flex flex-col dark:bg-[#212b36] scroll-smooth`}>
+  id='theme-starter'
+  className={`${siteConfig('FONT_STYLE')} h-screen flex flex-col overflow-hidden dark:bg-[#212b36]`}>
       <Style />
       {/* 页头 */}
       <Header {...props} />
 
-      <div id='main-wrapper' className='grow'>
+       <div 
+        id='main-wrapper'
+        className="flex-1 relative overflow-y-hidden">
         {children}
       </div>
 
