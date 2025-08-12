@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 import { useRef } from 'react'
 const AlgoliaSearchModal = dynamic(() => import('@/themes/starter/components/AlgoliaSearchModal'), { ssr: false })
+const RegAlgoliaSearchModal = dynamic(() => import('@/themes/starter/components/RegAlgoliaSearchModal'), { ssr: false })
 /**
  * 英雄大图区块
  */
@@ -13,10 +14,19 @@ export const Hero = (props) => {
   console.log(props, "-------props-----------")
   const router = useRouter()
   const searchModal = useRef(null)
+    const regSearchModal = useRef(null)
+
 
   function handleSearch() {
     if (siteConfig('ALGOLIA_APP_ID')) {
       searchModal.current.openSearch()
+    } else {
+      router.push('/search')
+    }
+  }
+   function handleRegSearch() {
+    if (siteConfig('ALGOLIA_APP_ID')) {
+      regSearchModal.current.openSearch()
     } else {
       router.push('/search')
     }
@@ -72,8 +82,8 @@ export const Hero = (props) => {
               {siteConfig('STARTER_HERO_BUTTON_2_TEXT', null, CONFIG) &&
                 <li>
                   <a
-                    href={siteConfig('STARTER_HERO_BUTTON_2_URL', null, CONFIG)}
-                    target="_blank"
+                    href='javascript:void(0)'
+                    onClick={handleRegSearch}
                     className="flex items-center rounded-md bg-white/[0.12] px-16 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark" rel="noreferrer"
                   >
                     {siteConfig('STARTER_HERO_BUTTON_2_ICON', null, CONFIG) && <img className='mr-4' src={siteConfig('STARTER_HERO_BUTTON_2_ICON', null, CONFIG)} />}
@@ -117,6 +127,7 @@ export const Hero = (props) => {
     </div>
   </div >
     <AlgoliaSearchModal cRef={searchModal} {...props} />
+        <RegAlgoliaSearchModal cRef={regSearchModal} {...props} />
   {/* <!-- ====== Hero Section End --> */ }
     </>
 }
