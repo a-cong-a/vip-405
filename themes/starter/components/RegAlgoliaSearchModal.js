@@ -251,7 +251,7 @@ export default function AlgoliaSearchModal({ cRef }) {
         } flex flex-col justify-between w-full min-h-[10rem] h-full md:h-fit max-w-xl light:bg-hexo-black-gray light:border-gray-800 bg-white light:bg- p-5 rounded-lg z-50 shadow border hover:border-blue-600 duration-300 transition-all `}>
         <div className='flex justify-between items-center'>
           <div className='text-2xl text-black light:text-yellow-600 font-bold'>
-            会员登录
+            会员注册
           </div>
           <div>
             <i
@@ -277,9 +277,10 @@ export default function AlgoliaSearchModal({ cRef }) {
               onChange={e => handleInputChange(e)}
               className='text-black light:text-gray-200 bg-gray-50 light:bg-gray-600 outline-blue-500 w-full px-4 my-5 py-1 mb-4 border rounded-md'
               ref={inputRef}
-            /> */}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            /> */}
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaa
           </div>
           <div>
             {/* <a onClick={onJumpSearchResult}

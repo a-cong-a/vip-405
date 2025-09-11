@@ -37,9 +37,10 @@ export const Hero = (props) => {
       id="home"
       className="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
     > */}
+    {/* bg-black */}
     <div
       id="home"
-      className="relative h-screen bg-black pt-[120px] md:pt-[130px] lg:pt-[160px]"
+      className="relative bg-white h-screen  pt-[120px] md:pt-[130px] lg:pt-[160px]"
     >
     <div className="container">
       {/* <div className="-mx-4 flex flex-wrap items-center"> */}
@@ -51,14 +52,14 @@ export const Hero = (props) => {
           >
             {/* 主标题 */}
             <h1
-              className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]"
+              className="mb-6 text-3xl font-bold leading-snug text-black sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]"
             >
               {/* {siteConfig('STARTER_HERO_TITLE_1', null, CONFIG)} */}
-              <span>PRO+</span><span className='text-red-700 ml-2'>一站式</span>
+              <span className=''>PRO+</span><span className='text-red-700 ml-2'>一站式</span>
             </h1>
             {/* 次标题 */}
             <p
-              className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]"
+              className="text-black;mx-auto mb-9 max-w-[600px] text-base font-medium  sm:text-lg sm:leading-[1.44]"
             >
                Your one-stop favorites will never be lost!<br></br>
               {siteConfig('STARTER_HERO_TITLE_2', null, CONFIG)}
@@ -72,7 +73,7 @@ export const Hero = (props) => {
                 <li>
                   <a onClick={handleSearch}
                     href='javascript:void(0)'
-                    className="inline-flex items-center justify-center rounded-md bg-white px-20 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-body-color"
+                    className="inline-flex items-center justify-center rounded-md bg-dark px-20 py-[14px] text-center text-base font-medium text-white shadow-1 transition duration-300 ease-in-out hover:bg-gray-8 hover:text-body-color"
                   >
                     {/* href={siteConfig('STARTER_HERO_BUTTON_1_URL', null, CONFIG)} */}
                     {siteConfig('STARTER_HERO_BUTTON_1_TEXT', null, CONFIG)}
@@ -84,7 +85,7 @@ export const Hero = (props) => {
                   <a
                     href='javascript:void(0)'
                     onClick={handleRegSearch}
-                    className="flex items-center rounded-md bg-white/[0.12] px-16 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark" rel="noreferrer"
+                    className="flex items-center rounded-md bg-dark px-16 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-gray-8 hover:text-body-color" rel="noreferrer"
                   >
                     {siteConfig('STARTER_HERO_BUTTON_2_ICON', null, CONFIG) && <img className='mr-4' src={siteConfig('STARTER_HERO_BUTTON_2_ICON', null, CONFIG)} />}
                     {siteConfig('STARTER_HERO_BUTTON_2_TEXT', null, CONFIG)}
